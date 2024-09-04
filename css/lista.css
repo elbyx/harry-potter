@@ -1,0 +1,32 @@
+.lista-personagens{
+    list-style: none;
+    padding: 0;
+}
+.personagem{
+    background-color: gray;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.personagem .name{
+    font-family: 'SF Distant Galaxy', sans-serif;
+    font-size: 28px;
+}
+.personagem .detail{
+    display: flex;
+}
+.personagem .description{
+    border: #000 1px solid;
+    padding: 1rem;
+}
+.personagem img{
+    width: 300px;
+}
+@media screen and (max-width: 500px){
+    .personagem .detail{
+        flex-direction: column-reverse;
+    }    
+    .personagem img{
+        width: 100%;
+    }
+}
